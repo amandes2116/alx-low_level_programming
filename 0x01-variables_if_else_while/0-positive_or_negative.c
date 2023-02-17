@@ -10,8 +10,8 @@ int main(void)
 {
 int n;
 srand(time(0));
-n = rand() % 201 - 100;
-if (n >= 0)
+n = rand() - RAND_MAX /2;
+if((n % 10)> 5)
 {
 putchar('P');
 putchar('o');
