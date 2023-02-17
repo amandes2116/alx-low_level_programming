@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-*main - A program that prints random number to the variable n each time it is executed.
+*main - A program that prints random number.
 *the number stored in the variable n is positive or negative.
 *Return:0 (success)
 */
@@ -13,25 +13,15 @@ srand(time(0));
 n = rand() - RAND_MAX /2;
 if((n % 10)> 5)
 {
-putchar('P');
-putchar('o');
-putchar('s');
-putchar('i');
-putchar('t');
-putchar('i');
-putchar('v');
-putchar('e');
+printf("The last digit of %d is %d and is graterthan 5\n", n, n%10);
+}
+else if((n % 10) < 6 && (n % 10) !=0)
+{
+printf("The last digit of %d is %d and less than 6 and not 0\n", n, n%10);
 }
 else
 {
-putchar('N');
-putchar('e');
-putchar('g');
-putchar('a');
-putchar('t');
-putchar('i');
-putchar('v');
-putchar('e');
+printf("The last digit of %d is %d and is 0\n", n, n%10);
 }
 return 0;
 }
