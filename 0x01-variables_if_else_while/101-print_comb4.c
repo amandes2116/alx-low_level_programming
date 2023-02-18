@@ -21,8 +21,8 @@ putchar(b);
 putchar(a);
 if (!(a == '9' && c == '7' && b == '8'))
 {
-putchar(',')
-putchar(' ')
+putchar(',');
+putchar(' ');
 
 }
 }
