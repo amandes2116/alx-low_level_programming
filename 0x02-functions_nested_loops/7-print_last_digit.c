@@ -1,7 +1,6 @@
 #include "main.h"
 /**
 *main - check the code.
-*print_last_digit - prints the last digit
 *Return:0 value of the last digit
 */
 int main(void)
