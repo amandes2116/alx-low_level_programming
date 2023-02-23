@@ -1,6 +1,8 @@
 #include "main.h"
+
 /**
 * positive_or_negative - checks if given number id +, - or 0
+*
 * @i:number to be checked
 * Return:nothing
 */
