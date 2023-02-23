@@ -2,7 +2,7 @@
 
 /**
 * main - causes an infinite loop
-* Return: Always 0.
+* Return: 0
 */
 
 int main(void)
@@ -12,7 +12,7 @@ int i;
 printf("Infinite loop incoming :(\n");
 
 i = 0;
-/**
+/*
 *while (i < 10)
 *{
 *putchar(i);
