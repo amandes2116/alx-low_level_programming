@@ -3,6 +3,8 @@
 #include "main.h"
 /**
 *main - check the code
+*@ac: the number of command line arguments
+*@av: an array of strings containing the command line argume
 *
 *Return: Always 0.
 */
