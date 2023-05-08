@@ -18,7 +18,7 @@ void print_entry(unsigned long int entry_point, unsigned char *entr_ident);
 void close_elf(int el);
 /**
 *check_elf - To Check if File is ELF File.
-*@entr_ident:The Pointer an Array Containing The ELF Magic Number.
+*@ident:The Pointer an Array Containing The ELF Magic Number.
 *
 *Description:The File If  is Not ELF File - Exit Code is 98.
 */
@@ -39,7 +39,7 @@ exit(98);
 }
 /**
 *print_magic - To Print Magic Number Of ELF Header.
-*@entr_ident: The Pointer an Array Containing ELF Magic Number.
+*@ident: The Pointer an Array Containing ELF Magic Number.
 *
 *Description: The Magic Number Separated By Spaces.
 */
@@ -58,7 +58,7 @@ printf(" ");
 }
 /**
 * print_class - To Print Class of ELF Header.
-* @entr_ident: The Pointer an Array Containing ELF Class.
+* @ident: The Pointer an Array Containing ELF Class.
 */
 void print_class(unsigned char *entr_ident)
 {
@@ -80,7 +80,7 @@ printf("<unknown: %x>\n", entr_ident[EI_CLASS]);
 }
 /**
 *print_data - To Print Of The Data of ELF Header.
-*@entr_ident: The Pointer an Array Containing ELF Class.
+*@ident: The Pointer an Array Containing ELF Class.
 */
 void print_data(unsigned char *entr_ident)
 {
@@ -102,7 +102,7 @@ printf("<unknown: %x>\n", entr_ident[EI_CLASS]);
 }
 /**
 * print_version - To Print Of The Version Of ELF Header.
-* @entr_ident: The Pointer an Array containe ELF Version.
+* @ident: The Pointer an Array containe ELF Version.
 */
 void print_version(unsigned char *entr_ident)
 {
@@ -202,7 +202,7 @@ printf("<unknown: %x>\n", ent_type);
 }
 }
 /**
-* print_entry - Print Entry Points Of ELF Header.
+* print_entry - Print Entry Point Of ELF Header.
 * @entry_point: Address Of The ELF Entry Point.
 * @entr_ident_: The Pointer an Array Containe The ELF Class.
 */
